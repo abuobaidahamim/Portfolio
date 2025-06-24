@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="icon" href="Logo2.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="portfolioName border">
+                Abu Obaida Hamim
+            </div>
+            <div class="information">
+                <a href="file:///D:/Programming/Website%20Project/Portfolio.html">
+                    <div class="homeLogo border">    
+                        <i class="fa-solid fa-house"></i>
+                        <div class="homeText">
+                            Home
+                        </div>
+                    </div>
+                </a>
+                <a href="#projectBody">
+                    <div class="projectLogo border">
+                        <i class="fa-solid fa-list-check"></i>
+                        <div class="projectText">
+                            Projects
+                        </div>
+                    </div>
+                </a>
+                <a href="#aboutMeBody">
+                    <div class="aboutLogo border">
+                        <i class="fa-solid fa-address-card"></i>
+                        <div class="aboutText">
+                            About Me
+                        </div>
+                    </div>
+                </a>
+                <a href="#contactBody">
+                    <div class="contactLogo border">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <div class="contactText">
+                            Contact
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="heroText">
+            <h5 class="greetings">Hi there!</h5> <br> 
+            <h3 class="myName">This is, Abu Obaida Hamim</h3>
+            <h3 class="myName">A Web Developer</h3> <br>
+            <p class="intro1">Welcome to my portfolio!</p>
+            <p class="intro1">Here you can find my projects and learn more about me.</p>
+        </div>
+        <div id="myPic"></div>
+    </section>
+
+    <section class="aboutMeBody" id="aboutMeBody">
+        <div class="mainContent">
+            <div class="aboutMeContent">
+                <p class="aboutMeHeader">About Me</p>
+                <p class="aboutMeParagraph">I am a dedicated web developer pursuing a BSc in Software Engineering at Daffodil International University. With hands-on experience in HTML, CSS, JavaScript, and modern frameworks, I am passionate about creating dynamic, responsive, and user-friendly web applications.</p>
+                <p class="aboutMeParagraph">I have successfully completed numerous projects and continuously strive to enhance my skills by exploring new technologies and contributing to open-source initiatives.</p>
+            </div>
+            <br>
+            <div class="skills">
+                <p class="skillsHeader">My Expertise</p>
+                <div class="skillsList">
+                    <div class="skillItem">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-square-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="skillItem">
+                        <i class="fa-brands fa-node-js"></i>
+                        <p>Node.js</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="projectBody" id="projectBody">
+        <p class="projectsHeader">My Projects</p>
+        <div class="projects">
+            <div class="projectsList">
+                <div class="projectItem">
+                    <div class="projectImage projectImage1"></div>
+                    <div class="projectInfo">
+                        <p class="projectTitle">Smart Kitchen Appliences</p>
+                        <p class="projectDescription">
+                            A smart kitchen automation system powered by Arduino and IoT technology. It integrates flame, gas, and temperature sensors to detect hazards and control an automated fire extinguisher, alarm, and smart lighting. The entire system can be monitored and controlled remotely via a mobile app for improved safety and efficiency.
+                        </p>
+                    </div>
+                </div>
+                <div class="projectItem">
+                    <div class="projectImage projectImage2"></div>
+                    <div class="projectInfo">
+                        <p class="projectTitle">Healthy Food Management System</p>
+                        <p class="projectDescription">
+                            DailyHarvest is the mobile app we developed as part of the Healthy Food Management System project. It helps users discover healthy food options and receive personalized meal recommendations based on their health conditions. With its intuitive design, DailyHarvest makes smart eating simple and accessible.
+                        </p>
+                    </div>
+                </div>
+                <div class="projectItem">
+                    <div class="projectImage projectImage3"></div>
+                    <div class="projectInfo">
+                        <p class="projectTitle">Tour Management System</p>
+                        <p class="projectDescription">
+                            Tour Guider is a mobile app designed to make travel planning easy and hassle-free. Users can explore and book tour packages, including full international trips, with just a few taps. The app offers secure payments, great discounts, and a smooth user experience — making travel simpler and more affordable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactBody" id="contactBody">
+        <p class="contactHeader">Contact Me</p>
+        <div class="contactSection">
+            <form class="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Ask your queries"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContent">
+            <div class="footerInner">
+                <span class="footerName">&copy; All rights reserved to Abu Obaida Hamim
+                </span>
+                <span class="footerLinks">
+                    <a href="https://github.com/abuobaidahamim" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/abu.obaida.hamim" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abu-obaida-hamim-742810286/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
